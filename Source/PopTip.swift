@@ -576,7 +576,7 @@ open class PopTip: UIView {
     }
     
     
-    open func show(_ text: String,_ direction: PopTipDirection,_ maxWidth: CGFloat,_ view: UIView,_ frame: CGRect, with duration: TimeInterval) {
+    open func show(_ text: String,_ direction: PopTipDirection,_ maxWidth: CGFloat,_ view: UIView,_ frame: CGRect, withDuration duration: TimeInterval) {
         show(text: text, direction: direction, maxWidth: maxWidth, in: view, from: from, duration: duration)
     }
 

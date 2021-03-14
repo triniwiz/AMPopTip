@@ -17,6 +17,7 @@ import SwiftUI
 
 /// Enum that specifies the direction of the poptip
 
+@objc(PopTipDirection)
 public enum PopTipDirection: Int, RawRepresentable {
   /// Up, the poptip will appear above the element, arrow pointing down
   case up
@@ -48,6 +49,7 @@ public enum PopTipDirection: Int, RawRepresentable {
  - `custom`: The Animation is provided by the user
  - `none`: No Animation
  */
+@objc
 public enum PopTipEntranceAnimation: Int, RawRepresentable  {
   /// The poptip scales from 0% to 100%
   case scale
@@ -68,7 +70,7 @@ public enum PopTipEntranceAnimation: Int, RawRepresentable  {
  - `custom`: The Animation is provided by the user
  - `none`: No Animation
  */
-
+@objc
 public enum PopTipExitAnimation: Int, RawRepresentable  {
   /// The poptip scales from 100% to 0%
   case scale
@@ -102,6 +104,7 @@ private let DefaultBounceOffset = CGFloat(8)
 private let DefaultFloatOffset = CGFloat(8)
 private let DefaultPulseOffset = CGFloat(1.1)
 
+@objcMembers
 open class PopTip: UIView {
   /// The text displayed by the poptip. Can be updated once the poptip is visible
   open var text: String? {
